@@ -12,7 +12,11 @@
     },
     "cuttlebelle": {
         "folder": {
-            "site": "webpages"
+            "site": "docs",
+            "docs": "documentation"
+        },
+        "site": {
+            "root": "/docs"
         }
     },
     "author": "",
