@@ -1,0 +1,88 @@
+html {
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin-bottom: auto;
+}
+
+.no-border {
+	border-radius: 0;
+}
+
+.text-muted {
+	color: #DDD !important;
+}
+
+.neon {
+	text-shadow: 
+		0 0 10px mediumblue,
+		0 0 40px blueviolet;
+	transition: text-shadow 0.6s ease-in;
+	filter: saturate(120%) hue-rotate(20deg);
+}
+
+a.neon:hover {
+	color:#DDD;
+	text-shadow:
+		0 0 2px #DDD,
+		0 0 10px mediumblue,
+		0 0 40px blueviolet;
+	transition: text-shadow 0.25s ease;
+	filter: saturate(90%) hue-rotate(20deg);
+}
+
+.neon-shadow {
+	box-shadow: .05rem .15rem 5px rgba(0, 0, 205, 0.2),
+				.05rem .15rem 10px rgba(138, 43, 226, 0.5);
+	filter: saturate(120%) hue-rotate(20deg);
+}
+
+.neon-btn {
+	border-color: blue;
+	background-color: mediumblue;
+	box-shadow: 0 0 5px mediumblue,
+	0 0 10px blue;
+	filter: saturate(100%) hue-rotate(20deg);
+}
+
+.neon-btn:hover {
+	border-color: blue;
+	background-color: mediumblue;
+	filter: saturate(120%) hue-rotate(20deg);
+}
+
+.text-small {
+	font-size: x-small;
+}
+
+.img-hover-zoom {
+	width: 400px;
+	height: 256px;
+	overflow: hidden;
+}
+
+.img-hover-zoom img {
+	transform-origin: center;
+	transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+	transform-origin: center;
+	transition: transform .5s ease;
+	transform: scale(1.5);
+}
+
+@media only screen and (min-width: 361px) {
+	p {
+		font-size: larger;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	p {
+		font-size: 12px;
+	}
+}
